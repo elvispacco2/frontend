@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día 4: Formularios</title>
+</head>
+<body>
+    <main>
+        <h1>FORMULARIOS</h1>
+        <section>
+            <form action="" id="formulario">
+                <h3>Input texto con minlength</h3>
+                <label for="nombres">Nombres: </label>
+                <input id="nombres" type="text" name="nombres" placeholder="Escribir nombres" minlength="3" maxlength="10">
+                <h3>Input number</h3>
+                <input type="number" name="edad" placeholder="Digite su edad">
+                <h3>Input number con Pattern y Title</h3>
+                <input type="text" name="celular" placeholder="Digite su celular" pattern="[0-9]{9}" required>
+                <h3>Input fecha</h3>
+                <input type="date" name="nacimiento" placeholder="Ingrese fecha de nacimiento">
+                <h3>Input hora</h3>
+                <input type="time" name="hora" placeholder="Ingrese hora para examen">
+                <h3>Input color</h3>
+                <input type="color" name="color" placeholder="Elegir color favorito">
+                <h3>Input password</h3>
+                <input type="password" name="password" placeholder="Ingrese su contraseña" >
+                <h3>Input correo</h3>
+                <input type="email" name="correo" placeholder="Ingrese su correo">
+                <h3>Input radiobutton</h3>
+                <input type="radio" name="genero"> Masculino
+                <input type="radio" name="genero"> Femenino
+                <input type="radio" name="genero"> Otro
+                <h3>Selector</h3>
+                <select name="pais">
+                    <option value="0" disabled selected>Elegir un pais</option>
+                    <option value="1">Perú</option>
+                    <option value="2">Chile</option>
+                    <option value="3">Bolivia</option>
+                    <option value="4">Venezuela</option>
+                    <option value="5">Colombia</option>
+                </select>
+                <h3>Textarea</h3>
+                <textarea name="comentario" cols="40" rows="7" placeholder="Tu opinión es importante (opcional)"></textarea>
+                <hr>
+                <h3>Botón para enviar desde el formulario</h3>
+                <input type="submit" value="Enviar datos">
+            </form>
+            <h3>Botón para enviar fuera del formulario</h3>
+            <button type="submit" form="formulario">Enviar</button>
+        </section>
+    </main>
+</body>
+</html>

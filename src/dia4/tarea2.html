@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 2: Formularios</title>
+</head>
+<body>
+    <main>
+        <h1>FORMULARIO DE DATOS</h1>
+        <section>
+        <form action="">
+            <p>Los campos marcados con * son de insersión obligatoria</p>
+            <table>
+                <tr>
+                    <td>Asunto</td>
+                    <td><input type="text" name="asunto"></td>
+                </tr>
+                <tr>
+                    <td>*Primer apellido</td>
+                    <td><input type="text" name="apaterno" required></td>
+                </tr>
+                <tr>
+                    <td>Segundo apellido</td>
+                    <td><input type="text" name="amaterno"></td>
+                </tr>
+                <tr>
+                    <td>*Nombre</td>
+                    <td><input type="text" name="nombre" required></td>
+                </tr>
+                <tr>
+                    <td>DNI/NIE/Passaporte</td>
+                    <td><input type="text" name="dni" pattern="[a-zA-Z0-9][0-9]+"></td>
+                </tr>
+                <tr>
+                    <td>*Correo electrónico</td>
+                    <td><input type="email" name="correo" id=""></td>
+                </tr>
+                <tr>
+                    <td>Celular</td>
+                    <td><input type="text" pattern="[0-9]+"></td>
+                </tr>
+                <tr>
+                    <td>¿Sobre qué?</td>
+                    <td>
+                        <select name="sobre-que">
+                            <option value="0" selected disabled>Elige una opción</option>
+                            <option value="1">Atención</option>
+                            <option value="1">Costos</option>
+                            <option value="1">Inscripciones</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>¿Qué vas a escribir?</td>
+                    <td>
+                        <select name="tema">
+                            <option value="0" selected disabled>Elige una opción</option>
+                            <option value="1">Recomendación</option>
+                            <option value="1">Consulta</option>
+                            <option value="1">Queja</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>*Texto del escrito</td>
+                    <td><textarea name="escrito" placeholder="Escribe tu recomendación, consulta o queja aquí." cols="30" rows="5"></textarea></td>
+                </tr>
+            </table>
+            <p>Los datos personales facilitadas son susceptibles se cesión cuando esta sea precisa para tramitar su contestación</p>
+            <input type="submit" value="Enviar formulario">
+        </form>
+        </section>
+    </main>
+</body>
+</html>
