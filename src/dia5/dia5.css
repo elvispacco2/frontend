@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Gill Sans MT', Arial;
+}
+
+h1 {
+    color: crimson;
+    background-color: #000;
+    font-weight: bold;
+}
+
+article {
+    background-color: bisque;
+    border: solid red 2px;
+    padding: 15px;
+}
+
+h1, article {
+    margin: 10px;
+}
+
+article p {
+    color: #4f6061
+}
+
+ul {
+    background-color: darkkhaki;
+    padding: 10px;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    margin: 0px 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: #000;
+}
+
+article img {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+#nav-ayuda {
+    color: rgb(173, 1, 1);
+}
