@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martes - Selectores</title>
+    <style>
+        /* SELECTORES SIMPLES */
+        body {
+            background: #ddd;
+        }
+
+        .box {
+            background-color: red;
+            width: 200px;
+            padding: 10px;
+        }
+
+        ul a {
+             color: green;
+             font-weight: bold;
+        }
+
+        /* SELECTORES POR ATRIBUTO */
+        input[type="text"] {
+            background-color: aquamarine;
+        }
+
+        input[disabled] {
+            background: grey;
+        }
+
+        a[href="https://www.google.com"] {
+            background: yellowgreen;
+        }
+
+        /* PSEUDO-CLASES*/
+        .box:hover {
+            background: yellow;
+        }
+
+        input:focus {
+            outline: none;
+            box-shadow: 0 0 10px black;
+        }
+
+        ul.one li:first-child a{
+            color: white;
+            font-size: 25px;
+        }
+
+        ul.one li:last-child a{
+            color: blue;
+            font-size: 35px;
+        }
+
+        ul.one li:nth-child(odd) {
+            background-color: #aaa;
+        }
+
+        ul.one li:nth-child(even) {
+            background: yellowgreen;
+        }
+
+        ul.one li:nth-child(1){
+            background-color: #000;
+        }
+
+        ul.two li:nth-child(2n+1) {
+            background: #eb7171;
+        }
+
+        ul.two li:nth-child(2n) {
+            background: yellow;
+        }
+
+        /* PSEUDO-ELEMENTOS*/
+        h2::first-letter {
+            font-size: 50px;
+        }
+        
+        p::first-line {
+            background-color: #eb7171;
+        }
+
+        p::before {
+            content: '"';        
+        }
+        p::after {
+            content: '"';
+        }
+
+        /*Selector múltipe: Selectores separado por comas*/
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box">CAJA</div>
+        <ul class="one">
+            <li><a href="">Uno</a></li>
+            <li><a href="">Dos</a></li>
+            <li><a href="">Tres</a></li>
+            <li><a href="">Cuatro</a></li>
+            <li><a href="">Cinco</a></li>
+            <li><a href="">Seis</a></li>
+            <li><a href="">Siete</a></li>
+        </ul>
+        <input type="text">
+        <input type="text">
+        <input type="checkbox">
+        <input type="password">
+        <input type="text" disabled>
+        <br>
+        <a href="https://www.linkedin.com">LinkedIn</a>
+        <a href="https://www.google.com">Google</a>
+        <a href="https://www.youtube.com">Youtube</a>
+        <br>
+        <ul class="two">
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+            <li><a href="">6</a></li>
+            <li><a href="">7</a></li>
+        </ul>
+        <h2>TÍTULO SECUNDARIO</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolor quasi vitae, quod ratione quis voluptate quibusdam? Sint natus aliquid exercitationem, eveniet quidem dolore aspernatur maxime quos. Pariatur, distinctio quia. Sapiente commodi sunt in aut veniam corrupti perferendis? Quos dolore numquam expedita neque, maiores similique sed. Facere qui ab optio et voluptas possimus harum repellat ea voluptate assumenda totam hic, voluptates repudiandae, alias officia molestias adipisci aut perspiciatis eos tenetur.</p>
+        <div class="div3">
+            <style>
+                .div3 ul > li {
+                    border-top: 5px solid #eb7171;
+                }
+                *::selection{
+                    color: yellowgreen;
+                    background-color: #3b3b3b;                    
+                }
+            </style>
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li>Possimus quisquam aliquam voluptates quam dicta deleniti.</li>
+                    </ol>
+                </li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod dolore et quae porro dolores impedit aspernatur minima nam, incidunt rerum in eveniet magni numquam labore voluptatum id dolor sit beatae sequi provident suscipit quisquam consectetur. Quibusdam earum voluptatem voluptas iure quisquam rem quaerat ullam fugit veniam facere fuga non, praesentium aspernatur. Blanditiis, soluta alias explicabo necessitatibus recusandae doloremque numquam, tempore velit nam dicta quasi cum illum assumenda consequuntur illo! Ad dolore molestias repudiandae perferendis quia at placeat. Veniam debitis quam quisquam. Recusandae tempora optio reiciendis expedita alias ab, officiis ipsa facere nisi non labore architecto aut molestiae voluptas dolores voluptatem.</div>
+        </div>
+    </main>
+</body>
+</html>
