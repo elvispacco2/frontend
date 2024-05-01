@@ -1,0 +1,230 @@
+/*
+GLOBALES
+*/
+
+html {
+    scroll-padding: 100px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    font-family: arial;
+    background-color: #f7f7f7;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section p{
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+/*
+WRAP
+*/
+
+.wrap {
+    background-color: #eee;
+    max-width: 1440px;
+    margin: auto;
+    position: relative;
+    margin-top: 55px;
+}
+
+
+/*
+HEADER
+*/
+
+.header {
+    background-color: #04a133;
+    color: white;
+    padding: 0px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.header .logo {
+    font-size: 35px;
+}
+
+.header ul {
+    display: flex;
+}
+
+.header ul li a {
+    display: inline-block;
+    padding: 25px 13px;
+}
+
+.header ul li:hover {
+    background-color: #008b2a;
+}
+
+/*
+MAIN
+*/
+
+.main {
+    padding: 25px;
+}
+
+.main > section {
+    margin-bottom: 50px;
+}
+
+.main .figures{
+    display: flex;
+    margin-top: 40px;
+}
+
+.main .figures img {
+    width: 100%;
+}
+
+/*
+HOME
+*/
+
+.home h2 {
+    color: #3B06D2;
+}
+
+.home .figures figure,
+.services .figures figure,
+.portfolio .figures figure {
+    width: 28%;
+    padding-right: 30px;
+}
+
+/*
+SERVICES
+*/
+
+.services h2 {
+    color: #D206B2;
+}
+
+.services ul,
+.portfolio ul {
+    list-style: disc;
+    font-size: bold;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.services ul li,
+.portfolio ul li {
+    font-weight: bold;
+    margin-top: 17px;
+}
+
+.services ul li:nth-child(1) {
+    font-size: bold;
+    color: #FF0000;
+}
+
+.services ul li:nth-child(2) {
+    color: #1400FF;
+}
+
+.services ul li:nth-child(3) {
+    color: #D79B00;
+}
+
+.services ul li:nth-child(4) {
+    color: #03B2B2;
+}
+
+/*
+PORTFOLIO
+*/
+
+.portfolio h2 {
+    color: #AAD206;
+}
+
+.portfolio ul li:nth-child(1) {
+    color: #AE8800;
+}
+
+.portfolio ul li:nth-child(2) {
+    color: #AE280B;
+}
+
+.portfolio ul li:nth-child(3) {
+    color: #060564;
+}
+
+.portfolio ul li:nth-child(4) {
+    color: #637300;
+}
+
+/*
+CONTACT
+*/
+
+.contact h2 {
+    color: #03B2B2;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact form input,
+.contact form textarea,
+.contact form button {
+    padding: 15px;
+    font-family: inherit;
+    outline: none;
+}
+
+.contact form button {
+    width: 150px;
+    background-color: white;
+    color: #04a804;
+    font-weight: bold;
+    border: solid #04a804 1px;
+    border-radius: 4px;
+}
+
+.contact form button:hover {
+    background-color: #04a804;
+    color: white;
+    transition: 0.5s;
+}
+
+/*
+FOOTER
+*/
+
+.footer {
+    background-color: #04a133;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+}
+
+.footer a{
+    font-weight: bold;
+}
